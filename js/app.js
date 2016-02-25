@@ -8,7 +8,6 @@ angular.module('myRouter', ['ui.router'])
       controller: 'homeCtrl' ,
       templateUrl: 'js/home/homeTmpl.html'
     })
-    $stateProvider
       .state('portfolio', {
         url: '/portfolio' ,
         controller: 'portCtrl' ,

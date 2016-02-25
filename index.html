@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html ng-app="myRouter">
 <head>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -11,23 +11,28 @@
 
 <div class="nav-wrapper">
   <nav id="nav">
-    <ul>
-    <a ui-sref="home"><li><i class="fa fa-home"></i></li></a>
-    <a ui-sref="portfolio"><li><i class="fa fa-code"></i></li></a>
-    <a ui-sref="testimonials"><li><i class="fa fa-edit"></i></li></a>
-    <a ui-sref="contact"><li><i class="fa fa-comments-o"></i></li></a>
+    <ul id="nav-list">
+    <li><a ui-sref="home"><i class="icon fa fa-home"></i><b>HOME</b></li></a>
+    <li><a ui-sref="portfolio"><i class="icon fa fa-folder-open-o"></i><b>WORK</b></li></a>
+    <li><a ui-sref="testimonials"><i class="icon fa fa-code"></i><b>SKILLS</b></li></a>
+    <li><a ui-sref="contact"><i class="icon fa fa-envelope-o"></i><b>CONTACT</b></li></a>
+  </ul>
+
+  <ul id="social-nav">
+    <li><a href="http://www.github.com"><i class="fa fa-github"></i></a></li>
+    <li><a href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
   </ul>
 </nav>
 </div>
 
 <div class="view-container">
-  <div ui-view></div>
+  <div class="well" ui-view ng-animate="'view'"></div>
 
 </div>
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 <script src="js/app.js"></script>
 <script src="js/home/homeCtrl.js"></script>
