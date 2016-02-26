@@ -1,7 +1,6 @@
-angular.module('myRouter', ['ui.router'])
+angular.module('myRouter', ['ngAnimate', 'ui.router'])
 
 .config(function($stateProvider, $urlRouterProvider) {
-
   $stateProvider
     .state('home', {
       url: '/' ,
@@ -11,12 +10,12 @@ angular.module('myRouter', ['ui.router'])
       .state('portfolio', {
         url: '/portfolio' ,
         controller: 'portCtrl' ,
-        templateUrl: 'js/port/portCtrl.html'
+        templateUrl: 'js/port/portTmpl.html'
       })
       .state('testimonials', {
         url: '/testimonials' ,
-        controller: 'testCtrl' ,
-        templateUrl: 'js/test/testTmpl.html'
+        controller: 'skillsCtrl' ,
+        templateUrl: 'js/skills/skillsTmpl.html'
       })
       .state('contact', {
         url: '/contact' ,

@@ -50,15 +50,32 @@ table {
 
 /*END CSS RESET*/
 
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
 
 body {
-	background-image: url('img/dark-mosaic.png'), url('img/background2.jpg');
-	-webkit-background-size: 5px 5px, cover;
-  -moz-background-size: 5px 5px, cover;
-  -o-background-size: 5px 5px, cover;
-	background-repeat: repeat, no-repeat;
-	background-size: 5px 5px, cover;
-	min-height: 100vh;
+	background-image: url('img/background3.jpg');
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*overflow-y: scroll;*/
+	/*min-height: 100vh;*/
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
 
 a {
@@ -75,7 +92,7 @@ ul {
 }
 
 #nav-list i {
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 #nav-list b {
 	font-size: .4em;
@@ -108,13 +125,13 @@ ul {
 	opacity: 0.7;
 }
 
-.view-container {
+.ui-view-container {
 	text-align: right;
 }
 
 .head-wrapper {
 	color: #FCFBE3;
-	margin-top: 100px;
+	margin-top: 75px;
 	margin-right: 75px;
 }
 
@@ -130,50 +147,100 @@ ul {
 	margin-right: 30px;
 }
 
-/*NG-ANIMATE*/
-/* Have to set height explicity on ui-view
-to prevent collapsing during animation*/
-.well[ui-view]{
- height: 100%;
+.port-wrapper {
+	width: 75%;
+	float: right;
+	margin-top: 30px;
+	margin-right: 50px;
+
 }
 
-.view-enter, .view-leave {
-  position: absolute;
-  -webkit-transition:all .5s ease-in-out;
-	-moz-transition:all .5s ease-in-out;
-	-o-transition:all .5s ease-in-out;
-	transition:all .5s ease-in-out;
+.port-wrapper img {
+	width: 47%;
+	box-shadow: 1px 1px 1px #3b4346;
+	background-color: #0F7488;
+
 }
 
-.view-enter {
-  opacity: 0;
-  -webkit-transform:scale3d(0.5, 0.5, 0.5);
-  -moz-transform:scale3d(0.5, 0.5, 0.5);
-  transform:scale3d(0.5, 0.5, 0.5);
+.thumb {
+
+	margin: 10px;
 }
 
-.view-enter-active {
-  opacity: 1;
-  -webkit-transform:scale3d(1, 1, 1);
-  -moz-transform:scale3d(1, 1, 1);
-  transform:scale3d(1, 1, 1);
+.left {
+	float: left;
+}
+.right {
+	float: right;
 }
 
-.view-leave {
-  opacity: 1;
-  /*padding-left: 0px;*/
-  -webkit-transform:translate3d(0, 0, 0);
-  -moz-transform:translate3d(0, 0, 0);
-  transform:translate3d(0, 0, 0);
+.tint {
+	background: #138199;
 }
 
-.view-leave-active {
-  opacity: 0;
-  /*padding-left: 100px;*/
-  -webkit-transform:translate3d(100px, 0, 0);
-  -moz-transform:translate3d(100px, 0, 0);
-  transform:translate3d(100px, 0, 0);
+.port-wrapper img:hover {
+	opacity: .5;
 }
+
+.port-wrapper img {
+	-moz-transition: opacity .3s linear;
+    -webkit-transition: opacity .3s linear;
+    -ms-transition: opacity .3s linear;
+    -o-transition: opacity .3s linear;
+    transition: opacity .3s linear;
+}
+
+#map {
+        width: 50vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+      }
+
+/**SOCIAL BUTTONS**/
+@-webkit-keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+@keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+.pulse {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.pulse:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
 
 /*MEDIA QUERIES*/
 
