@@ -12,8 +12,8 @@ angular.module('myRouter', ['ngAnimate', 'ui.router'])
         controller: 'portCtrl' ,
         templateUrl: 'js/port/portTmpl.html'
       })
-      .state('testimonials', {
-        url: '/testimonials' ,
+      .state('skills', {
+        url: '/skills' ,
         controller: 'skillsCtrl' ,
         templateUrl: 'js/skills/skillsTmpl.html'
       })

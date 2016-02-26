@@ -197,6 +197,29 @@ ul {
         margin: 0;
       }
 
+/**SKILLS**/
+
+#logos {
+	width: 50vw;
+	float: right;
+	margin-right: 100px;
+
+
+}
+#logos img {
+	max-width: 20%;
+	height: 150px;
+	margin-right: 40px;
+	padding: 15px;
+}
+
+#node {
+	max-width: 30%;
+	margin-right: 20px !important;
+}
+#angular {
+	margin-left: 10px;
+}
 /**SOCIAL BUTTONS**/
 @-webkit-keyframes pulse {
   25% {
