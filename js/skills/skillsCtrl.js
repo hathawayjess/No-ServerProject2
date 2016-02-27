@@ -1,4 +1,4 @@
-angular.module('myRouter').controller('testCtrl', function() {
+angular.module('myRouter').controller('skillsCtrl', function() {
 
 
 });
