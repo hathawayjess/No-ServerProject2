@@ -8,9 +8,8 @@ angular.module('myRouter', ['ngAnimate', 'ui.router'])
       templateUrl: 'js/home/homeTmpl.html'
     })
       .state('portfolio', {
-        url: '/portfolio' ,
-        controller: 'portCtrl' ,
-        templateUrl: 'js/port/portTmpl.html'
+        url: '/portfolio',
+        templateUrl: 'js/work/workTmpl.html'
       })
       .state('skills', {
         url: '/skills' ,
