@@ -4,7 +4,6 @@ angular.module('myRouter', ['ngAnimate', 'ui.router'])
   $stateProvider
     .state('home', {
       url: '/' ,
-      controller: 'homeCtrl' ,
       templateUrl: 'js/home/homeTmpl.html'
     })
       .state('portfolio', {
@@ -13,12 +12,10 @@ angular.module('myRouter', ['ngAnimate', 'ui.router'])
       })
       .state('skills', {
         url: '/skills' ,
-        controller: 'skillsCtrl' ,
         templateUrl: 'js/skills/skillsTmpl.html'
       })
       .state('contact', {
         url: '/contact' ,
-        controller: 'contactCtrl' ,
         templateUrl: 'js/contact/contactTmpl.html'
       });
 
