@@ -8,12 +8,13 @@
 
   <div id="form">
     <p>E-mail me at <a href="mailto:hathaway.jess@gmail.com">hathaway.jess@gmail.com</a><br /> or fill out the form below.</p>
-    <form>
-      <input type="text" class="name" placeholder="Name">
-      <input type="email" class="email" placeholder="E-mail">
-      <input type="text" class="subject" placeholder="Subject">
-      <textarea placeholder="Message..."></textarea>
+    <form action="http://formspree.io/hathaway.jess@gmail.com" method="POST">
+      <input type="text" name="name" class="name" placeholder="Name">
+      <input type="email" name="_replyto" class="email" placeholder="E-mail">
+      <input type="text" name="submit" class="subject" placeholder="Subject">
+      <textarea name="message" placeholder="Message..."></textarea>
       <input id="submit" type="submit" value="Send">
+      <input type="hidden" name="_next" value="http://www.jesshathaway.com" />
     </form>
   </div>
 </div>
