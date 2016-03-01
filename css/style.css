@@ -125,7 +125,6 @@ ul {
 	height: 100%;
   background-color: #000;
 	opacity: 0.7;
-	max-width: 83px;
 }
 
 #navbar-contact {
@@ -344,6 +343,10 @@ ul {
 
 		}
 
+		#social-icons-mobile {
+			display: none;
+		}
+
 				#social-icons ul {
 					margin-bottom: 17px;
 				}
@@ -500,26 +503,33 @@ form {
 			float: right;
 			margin-right: 8%;
 			font-size: 5vw;
-
+			margin-top: 8vh;
 	}
-
-#contact-wrapper {
-		max-width: 60%;
-		float: right;
-		margin-right: 8%;
-		font-size: 5vw;
-}
 
 	.nav-wrapper {
 		width: 30vw;
 	}
 
-	.head {
-
+	.work-wrapper {
+		max-width: 65vw;
+		padding-right: 10px;
 	}
 
+	.img-holder {
+				max-height: 20vh;
+	}
+
+  #contact-wrapper {
+		float: right;
+		width: 70vw;
+		margin-right: 11%;
+		margin-top: 1vh;
+		text-align: left;
+	}
 	.sub-head {
 		margin-right: 0;
+		margin-top: 20px;
+		width: 100%;
 	}
 
 	.img-holder {
@@ -549,8 +559,29 @@ form {
 		display: none;
 	}
 
-	#contact-wrapper {
-		min-width: 100px;
-		float: right;
+	#social-icons-mobile {
+		display: block;
+		clear: both;
+		text-align: left;
 	}
+		#social-icons-mobile ul {
+			margin-top: 50px;
+			text-align: left;
+			float: right;
+		}
+		#social-icons-mobile a {
+			color: #fff;
+			font-family: 'Roboto', Verdana;
+			font-size: .5em;
+			padding-left: 10px;
+		}
+		#social-icons-mobile i {
+			color: #000;
+			font-size: 2.2em;
+			opacity: .7;
+			border: none;
+			box-shadow: none;
+			padding-right: 10px;
+		}
+
 }
