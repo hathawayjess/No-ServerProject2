@@ -191,7 +191,7 @@ ul {
 
 .img-holder {
 	max-width: 30vw;
-	height: 200px;
+	height: 40vh;
 	margin: 10px;
 	opacity: 0.9;
 	text-align: center;
@@ -367,7 +367,7 @@ form {
   text-align: left;
 	margin-top: 20px;
 }
-  form input, form textarea {
+  form input, form textarea, #sendMessage {
     padding: 10px;
 		font-family: 'Roboto', Verdana;
     background: #000;
@@ -378,23 +378,33 @@ form {
     color: #DDB972;
     margin-bottom: 20px;
     box-sizing: border-box; }
-    form input:focus, form textarea:focus {
-		 	border: 1px solid #DDB972;}
-  form input {
-    display: inline-block; }
+
+		form input:focus, form textarea:focus {
+		 	border: 1px solid #DDB972;
+		}
+
+		form input {
+    display: inline-block;
+		}
     form input.name, form input.email {
-      width: 49%; }
+      width: 49%;
+		}
+
     form input.name {
-      float: left; }
+      float: left;
+		}
     form input.email {
-      float: right; }
+      float: right;
+		}
 		form input.subject {
 			width: 100%;
 		}
-  form textarea {
-    width: 100%;
-    min-height: 150px;
-    resize: vertical; }
+
+  	form textarea {
+	    width: 100%;
+	    min-height: 150px;
+	    resize: vertical;
+		}
 
 
 		#form p {
@@ -448,7 +458,7 @@ form {
 	display: flex;
 	width: 50vw;
 	float: right;
-	margin-right: 150px;
+	margin-right: 100px;
 	display: block;
 }
 
