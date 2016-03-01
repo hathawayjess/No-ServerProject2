@@ -418,7 +418,7 @@ form {
 			opacity: .7;
 		}
 
-	#submit {
+	.submit {
 		float: right;
 	}
 

@@ -16,6 +16,7 @@ angular.module('myRouter', ['ngAnimate', 'ui.router'])
       })
       .state('contact', {
         url: '/contact' ,
+        controller: 'contactCtrl',
         templateUrl: 'js/contact/contactTmpl.html'
       });
 
